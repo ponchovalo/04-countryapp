@@ -5,7 +5,7 @@ import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component';
 import { CountryPageComponent } from './pages/country-page/country-page.component';
 import { ContriesRoutingModule } from './countries-routing.module';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { CountryTableComponent } from './components/country-table/country-table.component';
 
@@ -21,6 +21,7 @@ import { CountryTableComponent } from './components/country-table/country-table.
   ],
   imports: [
     CommonModule,
+    RouterModule,
     ContriesRoutingModule,
     SharedModule
   ]
